@@ -1,0 +1,35 @@
+<h1 id="listType">
+    <%=listType%>
+</h1>
+
+
+<div class="listContainer">
+
+    <div class="form-box">
+        <form action=<%=action%> method="post" id="form">
+            <textarea id="textarea" name="description" placeholder="Description" cols="40" rows="5"
+                maxlength="250"></textarea>
+            <input type="text" id="input" placeholder="Title" name="title" maxlength="20" required>
+            <button name="btn" value="ADD" type="submit" class="form-btn" id="btn-add">Add</button>
+            <button type="reset" class="form-btn" id="btn-reset">Reset</button>
+        </form>
+    </div>
+    <div id="task-list">
+        
+        <% for (let i=0; i < tasks.length; i++) {%>
+            <div class="task">
+
+                <h2 class="title-name">
+                    <%=tasks[i].title%>
+                </h2>
+                <p class="title-description">
+                    <%=tasks[i].description%>
+                </p>
+                <form action=<%=action%> method="post">
+                <button id=<%=i%> name="btn" value=<%=i%> type="submit" class="remove"><i class="fas fa-trash bigIcon"></i></button>
+            </form>
+            </div>
+            <% }%>
+    </div>
+
+</div>

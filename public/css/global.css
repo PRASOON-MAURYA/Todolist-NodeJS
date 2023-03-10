@@ -1,0 +1,26 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    /* text-decoration: none; */
+    /* list-style: none; */
+    /* font-size: 1rem; */
+}
+
+/* VALUES OF CSS VARIABLES */
+:root {
+    --blue: #1e90ff;
+    --pink: hotpink;
+    --purple: rgb(187, 0, 255);
+    --green: rgb(60, 255, 0);
+    --ocean: rgb(0, 247, 255);
+    --lemon: rgb(255, 255, 79);
+    --bgColor: rgb(182, 221, 255);
+
+    
+    --borderSmall: 1px solid rgb(255, 0, 162);
+    --borderMedium: 2px solid rgb(255, 0, 162);
+    --borderBig: 4px solid rgb(255, 0, 162);
+}
