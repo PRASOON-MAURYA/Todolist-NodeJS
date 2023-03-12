@@ -104,7 +104,7 @@ app.get("/:listType", async (req, res) => {
         });
     } else {
       const k = listType.charAt(0).toUpperCase() + listType.slice(1); // TO CAPITALISE FIRST LETTER OF THE INPUT URL FOR SHOWING AS A LIST HEADING
-      res.render(listType, {
+      res.render("index", {
         tasks: data,
         action: "/" + listType,
         listType: k,
